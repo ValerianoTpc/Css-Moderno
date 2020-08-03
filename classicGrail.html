@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, sans-serif;
+            font-size: 1.5rem;
+        }
+        .parent{
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+        }
+
+        header {
+            grid-column: 1 / 4;
+        }
+        .left-side {
+            grid-column: 1 / 2;
+        }
+        main {
+            grid-column: 2 / 3;
+        }
+
+        .right-side {
+            grid-column: 3 / 4;
+        }
+
+        footer {
+            grid-column: 1 / 4;
+        }
+
+
+
+        .coral{
+            background-color: #F7C8AB;
+        }
+        .purple{
+            background-color: #DFD3E4;
+            
+        }
+        .blue{
+            background-color: #A9E2EA;
+        }
+        .yellow{
+            background-color: #FEE8B4;
+        }
+        .green {
+            background-color: #D4F2C4;
+        }
+     
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <header class="purple"> Header </header>
+
+            <div class="left-side blue">Left Sidebar</div>
+
+            <main class="coral">Main</main>
+
+            <div class="right-side yellow">Right Sidebar</div>
+
+        <footer class="green">Footer Content</footer>
+    </div>
+   
+</body>
+
+
+</html>
